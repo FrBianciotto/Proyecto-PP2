@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 import { useCartContext } from "../../context/CartContext";
 
 import './form.css'
@@ -44,8 +45,8 @@ const Form = () => {
                 
                 <textarea name="comment" onChange={(e) => handleChange(e)} id="" cols="30" rows="10"></textarea>
             </form>
-            <button onClick={clearCart}>Vaciar pedido</button>
-            <button onClick={dataManage}>Enviar pedido</button>
+            <Button variant="outline-secondary" onClick={clearCart}>Vaciar pedido</Button>
+            <Button variant="outline-secondary" onClick={dataManage}>Enviar pedido</Button>
     </div>
   )
 }

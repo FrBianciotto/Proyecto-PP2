@@ -1,13 +1,14 @@
+import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const OptionButton = () => {
   return (
     <div className='optionButtons'>
         <Link to='/cart'>
-            <button type="button" className="btn btn-primary">IR AL CARRITO</button>
+            <Button variant="outline-secondary">IR AL CARRITO</Button>
         </Link>
         <Link to='/'>
-            <button type="button" className="btn btn-primary">SEGUIR COMPRANDO</button>
+            <Button variant="outline-secondary">SEGUIR COMPRANDO</Button>
         </Link>
     </div>
   )
