@@ -1,9 +1,15 @@
-import { Table } from 'react-bootstrap'
+import { useState } from 'react'
+import { Button, Table } from 'react-bootstrap'
 import { useCartContext } from '../../context/CartContext'
 import Form from '../Form/Form'
 
 const CartList = () => {
-  const { totalPrice, cartList, deleteItem } = useCartContext()
+  const[finalize, setFinalize] = useState(false)
+  const { totalPrice, cartList, deleteItem, clearCart} = useCartContext()
+
+  function handleChange(){
+    setFinalize(!finalize)
+  }
   return (
     <div className='col-10 m-auto'>
       <Table striped bordered hover>
@@ -33,7 +39,10 @@ const CartList = () => {
       </Table>
 
       <p>Precio final: {totalPrice()}</p>
-      <Form/>
+      <Button variant="outline-secondary" onClick={clearCart}>Vaciar pedido</Button>
+      <Button variant="outline-secondary" onClick={handleChange}>Finalizar compra</Button>
+      {finalize && <Form/>}
+      
     </div>
 
   )

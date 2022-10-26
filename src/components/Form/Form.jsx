@@ -4,7 +4,7 @@ import { useCartContext } from "../../context/CartContext";
 
 import './form.css'
 const Form = () => {
-    const {clearCart, buy} = useCartContext();
+    const {buy} = useCartContext();
     const [customerData, setCustomerData] = useState({});
     const [nameError, setNameError] = useState(false);
     const [phoneError, setPhoneError] = useState(false);
@@ -45,7 +45,6 @@ const Form = () => {
                 
                 <textarea name="comment" onChange={(e) => handleChange(e)} id="" cols="30" rows="10"></textarea>
             </form>
-            <Button variant="outline-secondary" onClick={clearCart}>Vaciar pedido</Button>
             <Button variant="outline-secondary" onClick={dataManage}>Enviar pedido</Button>
     </div>
   )

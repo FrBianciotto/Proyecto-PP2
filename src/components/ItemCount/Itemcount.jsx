@@ -24,7 +24,7 @@ const ItemCount = ({ stock, initial, onAdd, handleInputType }) => {
                 <span>{quantity}</span>
                 <button type="button" className="btn btn-secondary" onClick={decrement}>-</button>
             </div>
-            <Button variant="outline-secondary" onClick={addToCart}>AÑADIR AL CARRITO</Button>
+            {stock > 0 ? (<Button variant="outline-secondary" onClick={addToCart}>AÑADIR AL CARRITO</Button>) : (<h4>Lo sentimos, no hay stock de este producto</h4> )}
         </section>
     )
 }

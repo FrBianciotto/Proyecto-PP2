@@ -17,7 +17,7 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto navContainer">
-                        <NavLink to='/' className='navbarLinks'>Nosotros</NavLink>
+                        <NavLink to='/nosotros' className='navbarLinks'>Nosotros</NavLink>
                         <NavDropdown className='navbarLinks' title="Productos" id="collasible-nav-dropdown">
                             <NavDropdown.Item>
                                 <Link to="/categoria/fiambres">
@@ -35,7 +35,7 @@ function NavBar() {
                                 </Link>
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <NavLink to='/' className='navbarLinks'>Recetas</NavLink>
+                        <NavLink to='/recetas' className='navbarLinks'>Recetas</NavLink>
                     </Nav>
                 </Navbar.Collapse>
                 <Nav>

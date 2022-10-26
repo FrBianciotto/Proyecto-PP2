@@ -30,6 +30,7 @@ const ItemListContainer = () => {
 
   return (
     <div>
+        <img src="./assets/images/promocional.jpg" alt="Imagen promocional" className="img-promocional img-fluid" />
         <h2 className='title'>Productos</h2>
         {loading ? <Loader/> : <ItemList products={products}/>} 
         
