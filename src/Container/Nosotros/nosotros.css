@@ -1,0 +1,33 @@
+.nosotros {
+    margin-bottom: 15vh;
+}
+
+.comprarProductos {
+    background-color: #f2e1c5;
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #c3b091a6;
+}
+
+.comprarProductos iframe {
+    width: 60%;
+    height: 40vh;
+    margin-top: 5px;
+}
+
+.comprarProductos i {
+    font-size: 25px;
+    margin-right: 7px;
+}
+
+.bi-facebook {
+    color: #046EE5;
+}
+
+.bi-instagram {
+    color: #CE1F52
+}
+
+.bi-whatsapp {
+    color: #03BB00;
+}
