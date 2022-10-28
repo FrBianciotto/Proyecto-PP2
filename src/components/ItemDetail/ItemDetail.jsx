@@ -22,14 +22,14 @@ const ItemDetail = ({ prod }) => {
 
   return (
     <>
-      <h2 className='mt-3'>Item Detail</h2>
+      <h2 className='mt-3'>Detalle del producto</h2>
       <CardGroup className='mt-5 card-detail'>
         <Card className='d-flex align-items-center'>
           <img className='img' src={image} alt={name} />
         </Card>
         <Card>
-          <Card.Body>
-            <Card.Title>{name}</Card.Title>
+          <Card.Body className='d-flex flex-column justify-content-center'>
+            <Card.Title className='titleDetail'>{name}</Card.Title>
             <Card.Text>
               {description}
               <p>Precio: ${price}</p>

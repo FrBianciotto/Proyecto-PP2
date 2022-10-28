@@ -3,6 +3,8 @@ import { Button, Table } from 'react-bootstrap'
 import { useCartContext } from '../../context/CartContext'
 import Form from '../Form/Form'
 
+import './cartList.css'
+
 const CartList = () => {
   const[finalize, setFinalize] = useState(false)
   const { totalPrice, cartList, deleteItem, clearCart} = useCartContext()
@@ -38,9 +40,9 @@ const CartList = () => {
         </tbody>
       </Table>
 
-      <p>Precio final: {totalPrice()}</p>
-      <Button variant="outline-secondary" onClick={clearCart}>Vaciar pedido</Button>
-      <Button variant="outline-secondary" onClick={handleChange}>Finalizar compra</Button>
+      <p className='totalPrice'>Precio final: {totalPrice()}</p>
+      <Button className="button" variant="outline-secondary" onClick={clearCart}>Vaciar pedido</Button>
+      <Button className="button" variant="outline-secondary" onClick={handleChange}>Finalizar compra</Button>
       {finalize && <Form/>}
       
     </div>

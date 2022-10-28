@@ -9,12 +9,12 @@
 }
 .cart i:hover{
     font-size: 40px;
-    color: #0d6efd;
+    color: #555b60;
 }
 
 .cart-count{
     color: white;
-    background-color: blue;
+    background-color: #6C757D;
     padding: 0px 5px 0px 5px;
     border-radius: 50%;
     position: absolute;

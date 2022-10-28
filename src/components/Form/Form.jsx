@@ -28,7 +28,7 @@ const Form = () => {
     }
 
   return (
-    <div>
+    <div className="form">
         <p>Ingrese sus datos para enviar el pedido:</p>
             <form className="formBuy" onSubmit={buy}>
                 {nameError && <span>Debe ingresar un nombre</span>}

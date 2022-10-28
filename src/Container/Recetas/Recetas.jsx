@@ -1,13 +1,13 @@
 import React from 'react'
-
+import './recetas.css'
 const Recetas = () => {
     return (
 
-        <div class="container">
-            <h2 class="tituloSecciones">Recetas</h2>
-            <div class="mb-4 row justify-content-center recetas align-items-center">
-                <img src="./assets/images/tallarinesConTS.jpg" alt="Tallarines con tomates secos" class="col-12 col-md-4" />
-                <div class="col-12 col-md-6 mt-3">
+        <div className="container containerRecetas">
+            <h2 className="tituloSecciones">Recetas</h2>
+            <div className="mb-4 row justify-content-center recetas align-items-center">
+                <img src="./assets/images/tallarinesConTS.jpg" alt="Tallarines con tomates secos" className="col-12 col-md-4" />
+                <div className="col-12 col-md-6 mt-3">
                     <h3>Tallarines con tomates secos</h3>
                     <ol>
                         <li>Cocinar los tallarines de acuerdo a las instrucciones del envase (puede ser cualquier
@@ -22,9 +22,9 @@ const Recetas = () => {
                     </ol>
                 </div>
             </div>
-            <div class="mb-4 row justify-content-center recetas align-items-center">
-                <img src="./assets/images/carpaccio.jpg" alt="Carpaccio" class="col-12 col-md-4" />
-                <div class="col-12 col-md-6 mt-3">
+            <div className="mb-4 row justify-content-center recetas align-items-center">
+                <img src="./assets/images/carpaccio.jpg" alt="Carpaccio" className="col-12 col-md-4" />
+                <div className="col-12 col-md-6 mt-3">
                     <h3>Carpaccio de Bresaola</h3>
                     <p>Si bien el carpaccio es un plato en el que la carne se masera y cocina con frío, está es una
                         opción súper sencilla y sabrosa para sorprender con una entrada original, donde utilizamos
@@ -40,9 +40,9 @@ const Recetas = () => {
                     </ol>
                 </div>
             </div>
-            <div class="mb-4 row justify-content-center recetas align-items-center">
-                <img src="./assets/images/saltimbocca.jpg" alt="Saltimbocca" class="col-12 col-md-4" />
-                <div class="col-12 col-md-6 mt-3">
+            <div className="mb-4 row justify-content-center recetas align-items-center">
+                <img src="./assets/images/saltimbocca.jpg" alt="Saltimbocca" className="col-12 col-md-4" />
+                <div className="col-12 col-md-6 mt-3">
                     <h3>Saltimbocca allá romana</h3>
                     <p>Los saltimbocca a la romana son un plato típico de la región Lacio, región donde está Roma.
                         El nombre "saltimbocca" viene de "saltare in bocca", (saltar en la boca), por ser tan rico.
@@ -65,10 +65,10 @@ const Recetas = () => {
                         </li>
                     </ol>
                 </div>
-                <div class="mb-4 row justify-content-center recetas align-items-center">
-                    <img src="./assets/images/crujienteJC.jpg" alt="Crujiente de Jamon Crudo" class="col-12 col-md-4" />
-                    <div class="col-12 col-md-6 mt-3">
-                        <div class="descripcionReceta">
+                <div className="mb-4 row justify-content-center recetas align-items-center">
+                    <img src="./assets/images/crujienteJC.jpg" alt="Crujiente de Jamon Crudo" className="col-12 col-md-4" />
+                    <div className="col-12 col-md-6 mt-3">
+                        <div className="descripcionReceta">
                             <h3>Crujiente de Jamón Crudo</h3>
                             <p> Es una muy buena opción para aderezar platos o darles un toque salado y crujiente de
                                 forma original. De hecho, en algunas recetas es capaz de sustituir a esa sal gruesa

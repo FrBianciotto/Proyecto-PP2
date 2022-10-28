@@ -1,6 +1,6 @@
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
+import './optionButton.css'
 const OptionButton = () => {
   return (
     <div className='optionButtons'>

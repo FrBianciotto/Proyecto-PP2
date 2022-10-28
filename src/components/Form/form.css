@@ -1,3 +1,11 @@
+.form p{
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.form{
+  margin-bottom: 15vh;
+}
 .formBuy{
   display: flex;
   flex-direction: column;

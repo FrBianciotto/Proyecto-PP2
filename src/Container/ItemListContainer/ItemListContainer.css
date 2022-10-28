@@ -4,8 +4,9 @@
 }
 .title{
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .products{
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
